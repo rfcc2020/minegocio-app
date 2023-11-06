@@ -413,8 +413,13 @@ class Ventas extends Component
 	}
 
 	private function actualizaCambio(){
+
 		try{
-			$cambio = round($this->pagado-$this->total,2,PHP_ROUND_HALF_UP);
+			if(!is_numeric($this->pagado))
+				$valPagado=0;
+			else
+				$valPagado=$this->pagado;
+			$cambio = round($valPagado-$this->total,2,PHP_ROUND_HALF_UP);
 		if($cambio >= 0){
 			$this->cambio=$cambio;
 			$this->saldo=0;

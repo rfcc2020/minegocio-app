@@ -15,7 +15,11 @@ class Saldos extends Component
 
     public function render()
     {
-		$keyWord = '%'.$this->keyWord .'%';
+        
+        if(!isset($keyWord))
+            $keyWord='pendiente';
+        else
+		    $keyWord = '%'.$this->keyWord .'%';
         return view('livewire.saldos.view', [
             'saldos' => Saldo::latest('estado')
                         ->join('ventas','ventas.id','=','saldos.venta_id')
