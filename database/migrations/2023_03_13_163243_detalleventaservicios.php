@@ -24,7 +24,7 @@ return new class extends Migration
             $table->integer('cantidad');
             $table->float('valor',8,2);
             $table->float('total',8,2);
-            $table->primary(['venta_id','servicio_id']);
+            //$table->primary(['venta_id','servicio_id']);
             $table->timestamps();
         });
     }
