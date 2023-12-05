@@ -54,7 +54,7 @@ return [
     |
     */
 
-    'asset_url' => null,// 'http://192.168.1.105/minegocio-app/public',
+    'asset_url' => 'https://minegocioapp.azurewebsites.net/public',
 
     /*
     |--------------------------------------------------------------------------
