@@ -54,7 +54,7 @@ return [
     |
     */
 
-    'url' => env('APP_URL', 'https://minegocioapp.azurewebsites.net'),
+    'url' => env('APP_URL', 'https://minegocioapp.azurewebsites.net/public'),
 
     'asset_url' => env('ASSET_URL'),
 
