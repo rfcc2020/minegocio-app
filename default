@@ -6,7 +6,7 @@ server {
     root /home/site/wwwroot/public; # Changed for Laravel
     index  index.php index.html index.htm;
     server_name  example.com www.example.com; 
-    port_in_redirect off;
+    port_in_redirect on;
 
     location / {            
         index  index.php index.html index.htm hostingstart.html;
