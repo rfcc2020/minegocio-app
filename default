@@ -5,9 +5,9 @@ server {
     listen [::]:8080;
     root /home/site/wwwroot/public; # Changed for Laravel
     index  index.php index.html index.htm;
-    server_name  https://minegocioapp.azurewebsites.net; 
+    server_name  http://minegocioapp.azurewebsites.net; 
     port_in_redirect off;
-    add_header 'Access-Control-Allow-Origin' 'https://minegocioapp.azurewebsites.net' always;
+    add_header 'Access-Control-Allow-Origin' 'http://minegocioapp.azurewebsites.net' always;
 
     location / {            
         index  index.php index.html index.htm hostingstart.html;
